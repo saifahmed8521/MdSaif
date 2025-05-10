@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saif's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader-container">
+      <div class="loader"></div>
+      <h2 class="loader-text">MD SAIF</h2>
+      <p class="loader-subtitle">AI Engineer</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content" style="display: none;">
+    <nav id="desktop-nav">
+      <div class="logo">MD SAIF</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work-experience">Experience</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button id="theme-toggle" class="theme-toggle-btn">
+              <span class="theme-icon">🌙</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Md Saif</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#work-experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li>
+            <button id="theme-toggle-mobile" class="theme-toggle-btn">
+              <span class="theme-icon">🌙</span>
+            </button>
+          </li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpg" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">MD SAIF</h1>
+        <p class="section__text__p2">AI Engineer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('https://drive.google.com/file/d/1YsZ7L-09Hrno_BNpBRHzvzQM1w4Y3Zrf/view')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+            onclick="location.href='https://www.linkedin.com/in/md-saif-ahmed-51bbb4202/'" />
+          <img src="./assets/github.png" alt="My Github profile" class="icon"
+            onclick="location.href='https://github.com/saifahmed8521'" />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <div class="center-wrapper">
+        <h1 class="title">About Me</h1>
+      </div>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/about-pic.jpg" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>2+ years <br />Machine Learning</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>Bachelor of Technology <br>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm an aspiring AI & Machine Learning Developer deeply passionate about the intersection of Artificial
+              Intelligence, Quantum Photonics, and real-world innovation. I bring ideas to life using LLMs, Deep Learning,
+              and intelligent data systems.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="work-experience">
+      <p class="section__text__p1">My Professional Journey</p>
+      <div class="center-wrapper">
+        <h1 class="title">Work Experience</h1>
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <h2 class="experience-sub-title">🏛️ Indian Institute of Science (IISc), Bangalore</h2>
+              <h3>Research Intern</h3>
+              <p class="date">Apr 2025 – Present</p>
+              <p class="description">
+                Working on Application of Deep Learning into Quantum Photonics, focusing on photonic chip-based quantum devices and ML-based modeling using neural networks.
+              </p>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <h2 class="experience-sub-title">🏢 Zebpay</h2>
+              <h3>AI/ML Developer Intern</h3>
+              <p class="date">Mar 2024 – Aug 2024</p>
+              <ul class="achievements">
+                <li>Built a Crypto Price Prediction API using LSTM networks</li>
+                <li>Achieved 15% improvement in accuracy through feature engineering & tuning</li>
+                <li>Empowered strategic trading with real-time ML-based forecasts</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <div class="center-wrapper">
+        <h1 class="title">Skills</h1>
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tech Stack</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Deep Learning</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>GenAI-LLMs</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>LangChain</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Tensorflow</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Data Analysis</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Data Structures</h3>
+                  <p>Basics</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tools</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Scikit-Learn</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Hugging Face</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Git/GitHub</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <div class="center-wrapper">
+        <h1 class="title">Projects</h1>
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Crypto Graph</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/saifahmed8521/Crypto-Graph'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://crypto-price-predictor.streamlit.app/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Sea Raptor</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/saifahmed8521/Under-Water-Plastic-Collection'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://under-water-plastic-collection.streamlit.app/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Fraud Detection</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/saifahmed8521/Fraud_Detection'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://fraudetection.streamlit.app/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="blog">
+      <p class="section__text__p1">Read My Latest</p>
+      <div class="center-wrapper">
+        <h1 class="title">Blog Posts</h1>
+      </div>
+      <div class="blog-details-container">
+        <div class="about-containers">
+          <div class="blog-card">
+            <div class="blog-img-container">
+              <img src="./assets/blog-img.jpg" alt="Blog Post" class="blog-img" />
+            </div>
+            <h2 class="blog-title">Most Companies Use Email/SMS Classifier</h2>
+            <p class="blog-description">Explore how businesses leverage machine learning to classify messages and improve customer communication.</p>
+            <div class="blog-tags">
+              <span class="blog-tag">Machine Learning</span>
+              <span class="blog-tag">NLP</span>
+              <span class="blog-tag">Classification</span>
+            </div>
+            <a href="https://medium.com/@saifahmed8521/most-companies-use-email-sms-classifier-91f1edd0663f" target="_blank" class="read-more-btn">Read on Medium</a>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <div class="center-wrapper">
+        <h1 class="title">Contact Me</h1>
+      </div>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:saifahmed8521@gmail.com">Email</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/md-saif-ahmed-51bbb4202/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#work-experience">Experience</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Md Saif. All Rights Reserved.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
